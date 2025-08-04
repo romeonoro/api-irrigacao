@@ -67,16 +67,18 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
    ```
 
 ## 🧪 Testes com Postman
-1. Importe o arquivo:
-irrigacao_api_postman_collection.json
 
-2. Configure o ambiente no Postman:
-Variáveis:
-- base_url: http://localhost:8000/api
-- token: (preencha após o login)
+1. **Importe o arquivo:**
+   - `irrigacao_api_postman_collection.json`
 
-3. Siga o passo a passo em:
-POSTMAN.md
+2. **Configure o ambiente no Postman:**
+
+   **Variáveis:**
+   - `base_url`: `http://localhost:8000/api`
+   - `token`: (preencha após o login)
+
+3. **Siga o passo a passo em:**
+   - `POSTMAN.md`
 
 ## 📬 Endpoints Principais
 
