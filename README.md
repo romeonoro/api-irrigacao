@@ -70,26 +70,28 @@ DB_DATABASE=C:\projetos\Gerenciamento\database\database.sqlite
 ```
 - Importante: Use o caminho absoluto. Laravel não entende caminhos relativos no .env para SQLite.
 
-### 🔐 JWT (Json Web Token)
+### ✅ JWT (Json Web Token)
 - Instalar e configurar:
 ``` bash
 composer require tymon/jwt-auth
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 php artisan jwt:secret
 ```
-### ▶️ Rodar o Projeto
+### ✅ Rodar o Projeto
 - Após configurar o .env, rode os comandos:
 ```bash
 php artisan migrate
 php artisan serve
 ```
 
-### 🧪 Ferramentas para Testes
+### ✅ Ferramentas para Testes
 Postman
 - Baixe em: https://www.postman.com/downloads/
 
-### 🧰 IDEs 
+### ✅ IDEs 
 IntelliJ IDEA (com plugins PHP e Laravel)
+
+---
 
 ## 📦 Instalação
 
