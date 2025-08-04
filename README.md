@@ -32,6 +32,7 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
 2. **Instale as dependências:**
 ```bash
 composer install
+```
 
 3. **Crie o arquivo .env:**
 Copie o arquivo .env.example ou use este exemplo:
@@ -41,37 +42,43 @@ DB_DATABASE=${PWD}/database/database.sqlite
 
 4. **Crie o banco de dados SQLite:**
 
-bash
+```bash
 touch database/database.sqlite
-Gere a chave da aplicação:
+```
+5. Gere a chave da aplicação:
 
-bash
+```bash
 php artisan key:generate
-Rode as migrations:
+```
+6. Rode as migrations:
 
-bash
+```bash
 php artisan migrate
-Gere a chave JWT:
+```
+7. Gere a chave JWT:
 
-bash
+```bash
 php artisan jwt:secret
-Inicie o servidor local:
+```
 
-bash
+8. Inicie o servidor local:
+
+```bash
 php artisan serve
+```
 
 ## 🧪 Testes com Postman
-Importe o arquivo:
+1. Importe o arquivo:
 irrigacao_api_postman_collection.json
 
-Configure o ambiente no Postman:
+3. Configure o ambiente no Postman:
 Variáveis:
 
 base_url: http://localhost:8000/api
 
 token: (preencha após o login)
 
-Siga o passo a passo em:
+3. Siga o passo a passo em:
 POSTMAN.md
 
 ## 📬 Endpoints Principais
