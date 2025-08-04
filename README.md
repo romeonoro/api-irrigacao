@@ -115,8 +115,20 @@ Authorization: Bearer SEU_TOKEN
 ```
 
 ## 📁 Estrutura de Pastas
-- app/Http/Controllers/AuthController.php
-- app/Http/Controllers/PivotController.php
-- app/Http/Controllers/IrrigationController.php
-- app/Models/User.php, Pivot.php, Irrigation.php
-- routes/api.php
+├── app/
+│ └── Http/
+│ └── Controllers/
+│ ├── AuthController.php
+│ ├── PivotController.php
+│ └── IrrigationController.php
+├── app/
+│ └── Models/
+│ ├── User.php
+│ ├── Pivot.php
+│ └── Irrigation.php
+├── routes/
+│ └── api.php
+├── database/
+│ └── migrations/
+├── .env
+├── irrigacao_api_postman_collection.json
