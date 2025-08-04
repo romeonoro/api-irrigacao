@@ -27,8 +27,8 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
 
 1. **Clone o projeto:**
    ```bash
-   git clone https://github.com/seuusuario/irrigacao-api.git
-   cd irrigacao-api
+   git clone https://github.com/romeonoro/api-irrigacao.git
+   cd api-irrigacao
 2. **Instale as dependências:**
    ```bash
    composer install
