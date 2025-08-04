@@ -115,6 +115,7 @@ Authorization: Bearer SEU_TOKEN
 ```
 
 ## 📁 Estrutura de Pastas
+```pgsql
 ├── app/
 │ └── Http/
 │ └── Controllers/
@@ -132,3 +133,4 @@ Authorization: Bearer SEU_TOKEN
 │ └── migrations/
 ├── .env
 ├── irrigacao_api_postman_collection.json
+```
