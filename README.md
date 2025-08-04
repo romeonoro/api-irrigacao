@@ -36,9 +36,10 @@ composer install
 
 3. **Crie o arquivo .env:**
 Copie o arquivo .env.example ou use este exemplo:
-env
+```env
 DB_CONNECTION=sqlite
 DB_DATABASE=${PWD}/database/database.sqlite
+```
 
 4. **Crie o banco de dados SQLite:**
 
@@ -71,12 +72,10 @@ php artisan serve
 1. Importe o arquivo:
 irrigacao_api_postman_collection.json
 
-3. Configure o ambiente no Postman:
+2. Configure o ambiente no Postman:
 Variáveis:
-
-base_url: http://localhost:8000/api
-
-token: (preencha após o login)
+- base_url: http://localhost:8000/api
+- token: (preencha após o login)
 
 3. Siga o passo a passo em:
 POSTMAN.md
@@ -104,16 +103,13 @@ DELETE	/irrigations/{id}	Remover registro
 
 ## ⚠️ Todos os endpoints (exceto login e registro) exigem um token JWT válido no header:
 
-makefile
+```makefile
 Authorization: Bearer SEU_TOKEN
+```
 
 ## 📁 Estrutura de Pastas
 - app/Http/Controllers/AuthController.php
-
 - app/Http/Controllers/PivotController.php
-
 - app/Http/Controllers/IrrigationController.php
-
 - app/Models/User.php, Pivot.php, Irrigation.php
-
 - routes/api.php
