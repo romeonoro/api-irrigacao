@@ -78,7 +78,7 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
    - `token`: (preencha após o login)
 
 3. **Siga o passo a passo em:**
-   - `POSTMAN.md`
+[  `POSTMAN.md`](https://github.com/romeonoro/API-Gerenciamento-Irrigacao/blob/main/POSTMAN.md)
 
 ## 📬 Endpoints Principais
 
