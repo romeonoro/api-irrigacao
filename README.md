@@ -23,6 +23,74 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
 
 ---
 
+## ✅ Pré-requisitos
+### 🧑‍💻 Sistema Operacional Recomendado
+
+- Windows 10 ou superior
+- Evite rodar o projeto em diretórios sincronizados com nuvem (como OneDrive)
+
+### ✅ PHP 8.1 ou superior (recomendado: 8.3)
+
+- Verifique se o PHP está instalado:
+```bash
+  php -v
+```
+- Site oficial: https://www.php.net/downloads.php
+
+### ✅ Composer
+- Gerenciador de dependências do PHP:
+```bash
+composer -V
+```
+- Site oficial: https://getcomposer.org/download/
+  
+### ✅ Laravel Installer
+- Instale globalmente com:
+```bash
+composer global require laravel/installer
+```
+### ✅ Banco de Dados: SQLite
+1. Criar o arquivo SQLite
+- No diretório database, crie o arquivo de banco:
+```bash
+touch database/database.sqlite
+```
+- No Windows, crie manualmente o arquivo vazio database.sqlite na pasta database/.
+
+2. Configurar o .env
+- No seu arquivo .env, altere as configurações do banco para:
+```env
+DB_CONNECTION=sqlite
+DB_DATABASE=/caminho/absoluto/para/database/database.sqlite
+```
+- Exemplo no Windows:
+```env
+DB_CONNECTION=sqlite
+DB_DATABASE=C:\projetos\Gerenciamento\database\database.sqlite
+```
+- Importante: Use o caminho absoluto. Laravel não entende caminhos relativos no .env para SQLite.
+
+### 🔐 JWT (Json Web Token)
+- Instalar e configurar:
+``` bash
+composer require tymon/jwt-auth
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+php artisan jwt:secret
+```
+### ▶️ Rodar o Projeto
+- Após configurar o .env, rode os comandos:
+```bash
+php artisan migrate
+php artisan serve
+```
+
+### 🧪 Ferramentas para Testes
+Postman
+- Baixe em: https://www.postman.com/downloads/
+
+### 🧰 IDEs 
+IntelliJ IDEA (com plugins PHP e Laravel)
+
 ## 📦 Instalação
 
 1. **Clone o projeto:**
@@ -46,22 +114,22 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
    touch database/database.sqlite
    ```
    
-5. Gere a chave da aplicação:
+5. **Gere a chave da aplicação:**
    ```bash
    php artisan key:generate
    ```
    
-6. Rode as migrations:
+6. **Rode as migrations:**
    ```bash
    php artisan migrate
    ```
    
-7. Gere a chave JWT:
+7. **Gere a chave JWT:**
    ```bash
    php artisan jwt:secret
    ```
 
-8. Inicie o servidor local:
+8. **Inicie o servidor local:**
    ```bash
    php artisan serve
    ```
