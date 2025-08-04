@@ -81,27 +81,34 @@ Variáveis:
 POSTMAN.md
 
 ## 📬 Endpoints Principais
-## 🔐 Autenticação
-Método	Rota	Descrição
-POST	/auth/register	Registrar novo usuário
-POST	/auth/login	Gerar token JWT
+
+### 🔐 Autenticação
+
+| Método | Rota           | Descrição              |
+|--------|----------------|------------------------|
+| POST   | /auth/register | Registrar novo usuário |
+| POST   | /auth/login    | Gerar token JWT        |
 
 ## 🚜 Pivôs de Irrigação
-Método	Rota	Descrição
-GET	/pivots	Listar pivôs do usuário
-GET	/pivots/{id}	Detalhes de um pivô
-POST	/pivots	Criar novo pivô
-PUT	/pivots/{id}	Atualizar pivô
-DELETE	/pivots/{id}	Remover pivô
+
+| Método | Rota           | Descrição               |
+|--------|----------------|-------------------------|
+| GET    | /pivots        | Listar pivôs do usuário |
+| GET    | /pivots/{id}   | Detalhes de um pivô     |
+| POST   | /pivots        | Criar novo pivô         |
+| PUT    | /pivots/{id}   | Atualizar pivô          |
+| DELETE | /pivots/{id}   | Remover pivô            |
 
 ## 💦 Registros de Irrigação
-Método	Rota	Descrição
-GET	/irrigations	Listar irrigações do usuário
-GET	/irrigations/{id}	Detalhes de uma irrigação
-POST	/irrigations	Criar novo registro de irrigação
-DELETE	/irrigations/{id}	Remover registro
 
-## ⚠️ Todos os endpoints (exceto login e registro) exigem um token JWT válido no header:
+| Método | Rota               | Descrição                         |
+|--------|--------------------|-----------------------------------|
+| GET    | /irrigations       | Listar irrigações do usuário      |
+| GET    | /irrigations/{id}  | Detalhes de uma irrigação         |
+| POST   | /irrigations       | Criar novo registro de irrigação  |
+| DELETE | /irrigations/{id}  | Remover registro                  |
+
+> ⚠️ Todos os endpoints (exceto login e registro) exigem um token JWT válido no header:
 
 ```makefile
 Authorization: Bearer SEU_TOKEN
