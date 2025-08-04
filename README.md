@@ -43,7 +43,22 @@ Esta API RESTful foi desenvolvida como desafio técnico, utilizando **Laravel** 
 composer -V
 ```
 - Site oficial: https://getcomposer.org/download/
-  
+
+### ✅ Verificar PHP e Composer no PATH
+- Adicionar manualmente ao PATH (se necessário):
+- Vá em Painel de Controle > Sistema > Configurações Avançadas do Sistema > Variáveis de Ambiente.
+- Em "Variáveis do sistema", encontre a variável Path e clique em Editar.
+- Clique em Novo e adicione os caminhos:
+
+```makefile
+C:\php
+C:\ProgramData\ComposerSetup\bin
+```
+
+- Ajuste conforme onde o PHP e o Composer foram instalados.
+- Clique em OK para salvar tudo.
+- Reinicie o terminal (cmd ou PowerShell) para aplicar.
+
 ### ✅ Laravel Installer
 - Instale globalmente com:
 ```bash
